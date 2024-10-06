@@ -5,3 +5,4 @@ JWT for authentication, cookies for session management, and Context API with Rea
 
 UI:
 ![image](https://github.com/user-attachments/assets/f77a0c4b-9e41-47fa-acc8-81fcc2764a2a)
+![image](https://github.com/user-attachments/assets/53a1c186-e4ce-4d8e-9952-fab9512f44ac)
