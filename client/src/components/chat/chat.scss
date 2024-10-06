@@ -1,0 +1,118 @@
+.chat{
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+
+    .messages{
+        flex:1;
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+        overflow-y: scroll;
+        padding-right: 10px;
+
+        h1{
+            font-weight: 300;
+        }
+
+        .message{
+            background-color: white;
+            padding: 10px;
+            border-radius: 10px;
+            display: flex;
+            align-items: center;
+            gap: 20px;
+            cursor: pointer;
+
+            img{
+                width: 30px;
+                height: 30px;
+                border-radius: 50%;
+                object-fit: cover;
+            }
+
+            span{font-weight: bold;}
+            
+        }
+    }
+    .chatBox{
+        flex:1;
+        background-color: white;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+
+        .top{
+            background-color: rgb(243, 224, 53);
+            padding: 10px;
+            font-weight: bold;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+
+            .close{
+                font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+                cursor: pointer;
+            }
+            .user{
+                display: flex;
+                align-items: center;
+                gap: 20px;
+                img{
+                    width: 30px;
+                    height: 30px;
+                    border-radius: 50%;
+                    object-fit: cover;
+                }
+            }
+        }
+        .center{
+            height: 250px;
+            overflow: scroll;
+            padding: 10px;
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+
+            .chatMessages{
+                
+
+                &.own{
+                    align-self: flex-end;
+                    text-align: right;
+                }
+
+                span{
+                    font-size: 12px;
+                    background-color: blanchedalmond;
+                    padding: 2px;
+                    border-radius: 5px;
+                }
+            }
+
+        }
+        .bottom{
+
+            border: 2px solid rgb(243, 224, 53);
+            height: 50px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+
+            textarea{
+                flex:3;
+                height: 100%;
+                border: none;
+                padding: 10px;
+            }
+            button{
+                flex: 1;
+                background-color: rgb(243, 224, 53);
+                height: 100%;
+                border: none;
+                cursor: pointer;
+            }
+
+        }
+    }
+}

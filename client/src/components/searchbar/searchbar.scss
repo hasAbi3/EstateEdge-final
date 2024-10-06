@@ -1,0 +1,99 @@
+@import "./src/responsive.scss";
+.searchBar{
+    .type{
+        
+        @include sm{
+            margin-bottom: 5px;
+        }
+        button{
+            padding: 16px 36px; 
+            border: 1px solid #999;
+            cursor: pointer;
+            background-color: white;
+            text-transform: capitalize;
+            border-bottom: none;
+
+        &.active{
+            background-color: black;
+            color: white;
+        }
+
+        &:first-child{
+            border-top-left-radius: 5px;
+            border-right: none;
+
+            @include sm{
+                border-bottom: 1px solid grey;
+            }
+        }
+
+        &:last-child{
+            border-top-right-radius: 5px;
+            border-left: none;
+            @include sm{
+                border-bottom: 1px solid grey;
+            }
+        }
+
+    }
+    }
+
+    form{
+        border: 1px solid #999;
+        display: flex;
+        justify-content: space-between;
+        height: 54px;
+        gap: 5px;
+
+        @include sm{
+            flex-direction: column;
+            border: none;
+        }
+
+        input{
+            border: none;
+            padding: 0px 10px;
+            width: 100px;
+
+            @include lg{
+                padding: 0px 5px;
+
+                &:nth-child(2), &:nth-child(3){
+                    width: 140 px;
+                }
+            }
+
+            @include md{
+                width: auto;
+                &:nth-child(2), &:nth-child(3){
+                    width: auto;
+                }
+            }
+
+            @include sm{
+                padding: 20px;
+                border: 1px solid grey;
+            }
+        }
+        a{
+            flex:0.5 ;
+            background-color: rgb(243, 224, 53);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        button{
+            cursor: pointer;
+            border: none;
+            background-color: inherit;
+            @include sm{
+                padding : 20px;
+            }
+        }
+        img{
+            background-color: inherit;
+            width: 20px;
+            height: 20px;
+        }}
+    }
+}
+
